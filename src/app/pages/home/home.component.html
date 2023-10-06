@@ -1,0 +1,153 @@
+<section class="home">
+  <div class="home__container">
+    <div class="home__wrapper ">
+
+      <div class="home__left-wrapper">
+        <div id="carouselExampleInterval" class="carousel slide carousel1" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="3000">
+              <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/fotomarafon-.jpg" class="d-block w-66"
+                alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+              <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/5-tyj-v-podarunok-.jpg" class="d-block w-66"
+                alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home__right-wrapper">
+        <div id="carouselExampleInterval" class="carousel slide carousel2" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/rol-tyzhnya.jpg" class="d-block w-66"
+                alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/monokombo.jpg" class="d-block w-66"
+                alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home__center-wrapper">
+      <div id="carouselExampleInterval" class="carousel slide carousel3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-item3" data-bs-interval="4000">
+            <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/monokombo.jpg" class="d-block w-66" alt="...">
+          </div>
+          <div class="carousel-item carousel-item3" data-bs-interval="4000">
+            <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/rol-tyzhnya.jpg" class="d-block w-66"
+              alt="...">
+          </div>
+          <div class="carousel-item carousel-item3">
+            <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/5-tyj-v-podarunok-.jpg" class="d-block w-66"
+              alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home__info">
+      <div class="home__info-container">
+
+        <div class="home__info-item">
+          <div class="home__info-item-wrapper">
+            <div class="home__info-item-img">
+              <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/mn-delivery-img.svg" alt="">
+            </div>
+            <a class="home__btn" [routerLink]="[ '/delivery' ]">Зона доставки</a>
+          </div>
+        </div>
+
+        <div class="home__info-item mod">
+          <div class="home__info-item-wrapper">
+            <div class="home__info-item-img">
+              <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/mono-supermen.svg" alt="">
+            </div>
+            <div class="home__text">
+              Середній час доставки в<br>
+              зеленій зоні <b>00:43:00</b>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="home__info-item">
+          <div class="home__info-item-wrapper">
+            <div class="home__info-item-img">
+              <img src="https://monosushi.com.ua/wp-content/uploads/2020/10/mono-bonus.svg" alt="">
+            </div>
+            <div class="home__text">
+              Наш графік роботи <br>
+              Працюємо з <b>11:00</b>
+              до <b>22:30</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home__wrapper1">
+      <div class="categories-menu">
+        <ul class="categories-list">
+          <li class="categories-list-item active-category"><a class="categories-list-link" href="">Всі</a></li>
+          <li class="categories-list-item"><a class="categories-list-link" href="">Філадельфія</a></li>
+          <li class="categories-list-item"><a class="categories-list-link" href="">Каліфорнія</a></li>
+          <li class="categories-list-item"><a class="categories-list-link" href="">Запечені</a></li>
+          <li class="categories-list-item"><a class="categories-list-link" href="">Фірмові</a></li>
+          <li class="categories-list-item"><a class="categories-list-link" href="">Макі</a></li>
+          <li class="categories-list-item"><a class="categories-list-link" href="">Преміум</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product__container">
+      <div class="product__item" *ngFor="let product of userProducts">
+        <div class="product__border">
+
+          <div class="product__image-wrap _ibg">
+            <a [routerLink]="[ '/product/'+product.category.path, product.id ]">
+              <img [src]="product.imgPath" alt="">
+            </a>
+          </div>
+
+          <div class="product__title-wrap">
+            <div class="product__title">
+              <a [routerLink]="[ '/product/'+product.category.path, product.id ]">{{product.title}}</a>
+            </div>
+          </div>
+
+          <div class="product__desc">
+            <p>{{product.desc}}</p>
+
+            <div class="product__size">
+              <span class="size">{{product.weight}}</span>
+            </div>
+
+          </div>
+
+          <div class="product__controls">
+            <div class="product__price-wrap">
+              <div class="product__price">
+                <b class="price">{{product.price * product.count}}</b>
+                грн
+              </div>
+            </div>
+
+            <div class="counter__button-group">
+              <button type="button" (click)="productCount(product, false)" class="counter__btn">-</button>
+              <input type="text" class="counter__product" [value]="product.count" readonly>
+              <button type="button" (click)="productCount(product, true)" class="counter__btn">+</button>
+            </div>
+            <button class="btn__order" (click)="addToBasket(product)">Замовити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

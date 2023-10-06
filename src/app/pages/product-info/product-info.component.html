@@ -1,0 +1,45 @@
+<section class="product-info">
+  <div class="product-info__container">
+    <ul class="product-info__menu-list">
+      <li>
+        <a [routerLink]="[ ''  ]">Головна</a>
+      </li>
+      <li>
+        <a [routerLink]="[ '/product/'+currentProduct.category.path]">{{currentProduct.category.title}}</a>
+      </li>
+      <li>
+        <a>{{currentProduct.title}}</a>
+      </li>
+    </ul>
+
+    <div class=" product-info__content">
+      <div class="product-info__item">
+
+        <div class="product-info__item-img">
+          <img [src]="currentProduct.imgPath" alt="">
+        </div>
+
+        <div class="product-info__item-info">
+          <h3 class="product-info__item-title">{{currentProduct.title}}</h3>
+          <p class="product-info__desc">
+            <span>Склад:</span>{{currentProduct.desc}}
+          </p>
+          <p class="product-info__desc">
+            <span>Вага:</span>{{currentProduct.weight}}
+          </p>
+
+          <div class="product-info__navigation">
+            <p class="product-info__price">{{currentProduct.price * currentProduct.count}}грн</p>
+            <div class="counter__button-group">
+              <button (click)="productCount(currentProduct, false)" class="counter__btn">-</button>
+              <input type="text" class="counter__product" readonly [value]="currentProduct.count">
+              <button (click)="productCount(currentProduct, true)" class="counter__btn">+</button>
+            </div>
+            <button class="order__btn" (click)="addToBasket(currentProduct)">Замовити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,25 @@
+<section class="discount">
+ 
+  <div class="discount__title">
+    <h2>
+      Акції
+    </h2>
+  </div>
+
+  <div class="discount__container">
+    <div class="discount__content-card " *ngFor="let discount of userDiscount">
+      <div class="discount__block">
+        <div class="discount__link">
+          <div class="discount__block-img _ibg">
+            <img [routerLink]="[ '/discount/',discount.id]" [src]="discount.imgPath" alt="">
+          </div>
+          <h3 [routerLink]="[ '/discount/',discount.id]" class="discount__desc">{{discount.title}}</h3>
+        </div>
+        <hr>
+        <div class="discount__flex-btn">
+          <a [routerLink]="[ '/discount/',discount.id]" class="discount__btn">Дізнатися Більше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,156 @@
+{
+  "discounts": [
+    {
+      "title": "Рол тижня",
+      "desc": "Рол тижня",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2F1.jpg?alt=media&token=5b54fbb5-780a-44ad-9cfb-e88c36519117",
+      "id": 1
+    },
+    {
+      "title": "3 + 1 = 5",
+      "desc": "3 + 1 = 5",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2F1.jpg?alt=media&token=5b54fbb5-780a-44ad-9cfb-e88c36519117",
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "title": "Роли",
+      "path": "roly",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=4bcac40a-468c-418d-a227-9027972d0d60",
+      "id": 1
+    },
+    {
+      "title": "Сети",
+      "path": "sety",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-sets.svg?alt=media&token=87149ff3-446e-4ae0-b410-d33b48b04c0f",
+      "id": 2
+    },
+    {
+      "title": "Напої",
+      "path": "drinks",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-drinks.svg?alt=media&token=86d77ddd-3228-4fec-84f0-6797bdbe1198",
+      "id": 3
+    },
+    {
+      "title": "Соуси",
+      "path": "soys",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-soys.svg?alt=media&token=fac85f3e-e4da-472e-ae1b-cada42508992",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "category": {
+        "title": "Роли",
+        "path": "roly",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=4bcac40a-468c-418d-a227-9027972d0d60",
+        "id": 1
+      },
+      "title": "Філадельфія в кунжуті\t",
+      "path": "filadelfiya-v-kunzhuti\t",
+      "desc": "Рис, крем сир, огірок, лосось, кунжут\n\n",
+      "price": 250,
+      "weight": "240",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Frol-1.jpg?alt=media&token=5c9f9775-c125-4c36-bcf0-fbc7027fbeea",
+      "count": null,
+      "id": 1
+    },
+    {
+      "category": {
+        "title": "Роли",
+        "path": "roly",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=4bcac40a-468c-418d-a227-9027972d0d60",
+        "id": 1
+      },
+      "title": " Сирний",
+      "path": "syrnyj\t",
+      "desc": "Рис, крем сир, фета, кунжут",
+      "price": 160,
+      "weight": "240",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Frol-2.jpg?alt=media&token=a76164da-f118-4bfc-8765-60d78b013952",
+      "count": 1,
+      "id": 2
+    },
+    {
+      "category": {
+        "title": "Роли",
+        "path": "roly",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=4bcac40a-468c-418d-a227-9027972d0d60",
+        "id": 1
+      },
+      "title": "Філадельфія з лососем\t",
+      "path": "filadelfiya-z-lososem\t",
+      "desc": "Риc, крем сир, огірок, лосось\t",
+      "price": 240,
+      "weight": "280",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Frol-3.jpg?alt=media&token=c0586253-e4b5-4da4-b7de-b36d4685e22c",
+      "count": 1,
+      "id": 3
+    },
+    {
+      "category": {
+        "title": "Сети",
+        "path": "sety",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=4bcac40a-468c-418d-a227-9027972d0d60",
+        "id": 2
+      },
+      "title": "Сет Філадельфія",
+      "path": "set-filadelfiya",
+      "desc": "Сет Філадельфія: з лососем / з креветкою / з крабом / з вугрем",
+      "price": 920,
+      "weight": "1000",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fset-1.jpg?alt=media&token=c0a8d4f4-761b-4460-95a6-2a892081ae35",
+      "count": 1,
+      "id": 4
+    },
+    {
+      "category": {
+        "title": "Напої",
+        "path": "drinks",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-drinks.svg?alt=media&token=86d77ddd-3228-4fec-84f0-6797bdbe1198",
+        "id": 3
+      },
+      "title": " Pepsi",
+      "path": "pepsi",
+      "desc": "Pepsi",
+      "price": 35,
+      "weight": "0,33",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fpepsi.jpg?alt=media&token=959d92a8-197b-48bd-a7a6-817c1b45cdd9",
+      "count": 1,
+      "id": 5
+    },
+    {
+      "category": {
+        "title": "Соуси",
+        "path": "soys",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fnav-img-soys.svg?alt=media&token=fac85f3e-e4da-472e-ae1b-cada42508992",
+        "id": 4
+      },
+      "title": "Васабі",
+      "path": "vasabi",
+      "desc": "Васабі",
+      "price": 12,
+      "weight": "25",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-286c8.appspot.com/o/images%2Fvasabi.png?alt=media&token=4804fd93-557f-4778-be0c-9edfa812218c",
+      "count": 1,
+      "id": 6
+    }
+  ],
+  "auth": [{
+    "id": 1,
+    "email": "admin@gmail.com",
+    "password": "qwerty123",
+    "fullName": "Petro Petriv",
+    "role": "ADMIN"
+
+  },
+  {
+    "id": 2,
+    "email": "user@gmail.com",
+    "password": "qwerty123",
+    "fullName": "Pavliv Pavliv",
+    "role": "USER"
+  }
+]
+}
